@@ -1,0 +1,74 @@
+.blocoCasa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* grid-template: auto / 10% 90%; */
+    /* grid-gap: 70px; */
+}
+
+.casa img {
+    max-height: 200px;
+    /* position: fixed; */
+    margin-top: 40px;
+    padding: 50px;
+    /* margin-right: 150px; */
+    border-bottom: solid #EEE 1px;
+}
+
+.card {
+    display: grid;
+    grid-template: auto / auto auto;
+    margin-top: 30px;
+}
+
+.card article {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 50px;
+    padding: 15px;
+    width: 250px;
+    border-bottom: solid #EEE 1px;
+    display: grid;
+    grid-template: auto / 20% auto;
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.card article img {
+    height: 150px;
+    width: 150px;
+    margin-right: 80px;
+    border-radius: 100%;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .card {
+        display: flex;
+        /* grid-template: auto / auto auto; */
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-shrink: 1;
+        /* justify-content: center; */
+        /* align-content: center; */
+        margin-top: 30px;
+        margin-right: 0;
+    }
+
+    .card article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        margin-left: 0;
+
+    }
+
+    /* .card img {
+        
+    } */
+}
