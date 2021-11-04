@@ -24,7 +24,7 @@ export default function Houses() {
                 if(item.image !== ""){
                     return item
                 }
-           
+                
             })
 
 
